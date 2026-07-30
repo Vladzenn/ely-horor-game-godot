@@ -11,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://d35ecbalw5tpt" path="res://sprites/Player/PlayerWalk.png" id="8_qaecf"]
 [ext_resource type="Script" uid="uid://pa4pjacqnonr" path="res://Script/AutoMovement.cs" id="9_olwjq"]
 [ext_resource type="Script" uid="uid://blwbwd4beugfv" path="res://Script/PlayerAnimation.cs" id="9_qaecf"]
+[ext_resource type="Script" uid="uid://b1k21qc442x2l" path="res://TreeLighting.cs" id="10_uf5uw"]
+[ext_resource type="Texture2D" uid="uid://e6jgp44nko7s" path="res://sprites/Environment/Tree/LeftTrunk.png" id="13_b2xwe"]
+[ext_resource type="Texture2D" uid="uid://bs421yenisxxm" path="res://sprites/Environment/Tree/RightTrunk.png" id="14_er55m"]
+[ext_resource type="Texture2D" uid="uid://b0uri27qxc5x6" path="res://sprites/Environment/Tree/Leaves.png" id="15_3iqos"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_quih1"]
 texture = ExtResource("1_4ny01")
@@ -97,10 +101,15 @@ animations = [{
 "speed": 6.5
 }]
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_o0hk1"]
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_g58hp"]
+cull_mode = 1
+polygon = PackedVector2Array(-4, 0, 5, 0, 5, 1, -4, 1)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_qaecf"]
 light_mode = 2
 
-[node name="Node2D" type="Node2D" unique_id=509494908]
+[node name="World" type="Node2D" unique_id=509494908]
+y_sort_enabled = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=764556569]
 position = Vector2(616.5482, 322.48862)
@@ -112,15 +121,16 @@ tile_set = SubResource("TileSet_o0hk1")
 metadata/_edit_lock_ = true
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=2117450675 groups=["Player"]]
+y_sort_enabled = true
 position = Vector2(120, 55)
 script = ExtResource("2_1acc2")
 Speed = 50.0
 
 [node name="CameraTarget" type="Marker2D" parent="Player" unique_id=185661532]
-position = Vector2(800.14087, -450.09668)
+position = Vector2(800.14087, -465)
 
 [node name="Camera" type="Camera2D" parent="Player" unique_id=958691580]
-position = Vector2(-1.8581848, 0.6807327)
+position = Vector2(1, 0)
 zoom = Vector2(5, 5)
 limit_enabled = false
 script = ExtResource("4_4ny01")
@@ -130,11 +140,13 @@ SmoothCam = true
 [node name="FlashlightPivot" type="Node2D" parent="Player" unique_id=1028792806]
 
 [node name="FlashlightLight" type="PointLight2D" parent="Player/FlashlightPivot" unique_id=151390519]
-position = Vector2(7.6293945e-06, 3.0517578e-05)
+light_mask = 3
 rotation = -1.5707964
-scale = Vector2(0.045504384, 0.055055056)
+scale = Vector2(0.05, 0.06)
 energy = 1.3
 blend_mode = 2
+range_item_cull_mask = 3
+shadow_enabled = true
 texture = ExtResource("5_ct407")
 offset = Vector2(0, 800)
 texture_scale = 0.95
@@ -142,27 +154,62 @@ height = 2087.0
 script = ExtResource("4_y1gf4")
 
 [node name="PointLight2D" type="PointLight2D" parent="Player/FlashlightPivot/FlashlightLight" unique_id=1153407102]
-position = Vector2(-11.549219, 23.864388)
-rotation = 1.5707964
-scale = Vector2(4.756832, 5.7022986)
+light_mask = 3
+scale = Vector2(5, 5)
 blend_mode = 2
+range_item_cull_mask = 3
+shadow_enabled = true
 texture = ExtResource("5_cfxdg")
-texture_scale = 0.53
+texture_scale = 0.5
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1270907157]
+light_mask = 3
+position = Vector2(0, 16)
 sprite_frames = SubResource("SpriteFrames_o0hk1")
 animation = &"Walk"
+offset = Vector2(0, -16)
 script = ExtResource("9_qaecf")
 
 [node name="Environment" type="Node2D" parent="." unique_id=1558218849]
+y_sort_enabled = true
 position = Vector2(608, 328)
-scale = Vector2(0.066190995, 0.066190995)
 
-[node name="Sprite2D" type="Sprite2D" parent="Environment" unique_id=1389303596]
-material = SubResource("CanvasItemMaterial_o0hk1")
-position = Vector2(-5000.68, -3051.7744)
-scale = Vector2(0.13741289, 0.13741289)
+[node name="Tree" type="Node2D" parent="Environment" unique_id=28673693]
+light_mask = 2
+y_sort_enabled = true
+position = Vector2(-544, -225)
+script = ExtResource("10_uf5uw")
+ShowDebug = true
+
+[node name="Leaves" type="Sprite2D" parent="Environment/Tree" unique_id=2032242932]
+light_mask = 2
+z_index = 1
+position = Vector2(0, 1)
+texture = ExtResource("15_3iqos")
+offset = Vector2(0, -45)
+
+[node name="LeftTrunk" type="Sprite2D" parent="Environment/Tree" unique_id=1308693860]
+light_mask = 2
+position = Vector2(0, 1)
+texture = ExtResource("13_b2xwe")
+offset = Vector2(0, -45)
+
+[node name="RightTrunk" type="Sprite2D" parent="Environment/Tree" unique_id=574942666]
+light_mask = 2
+position = Vector2(0, 1)
+texture = ExtResource("14_er55m")
+offset = Vector2(0, -45)
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Environment/Tree" unique_id=160218541]
+show_behind_parent = true
+occluder = SubResource("OccluderPolygon2D_g58hp")
+
+[node name="Ghost" type="Sprite2D" parent="Environment" unique_id=1274169065]
+y_sort_enabled = true
+material = SubResource("CanvasItemMaterial_qaecf")
+position = Vector2(-400, -281)
+scale = Vector2(0.006816054, 0.006816054)
 texture = ExtResource("8_ct407")
 script = ExtResource("9_olwjq")
-speed = 0.9
-radius = 10.0
+speed = 1.0
+radius = 30.0

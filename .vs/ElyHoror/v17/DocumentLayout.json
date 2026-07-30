@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|y:\\.godot\\projects\\elyhorror\\ely-horor\\script\\playeranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|solutionrelative:script\\playeranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|y:\\.godot\\projects\\elyhorror\\ely-horor\\treelighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|solutionrelative:treelighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|y:\\.godot\\projects\\elyhorror\\ely-horor\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|solutionrelative:script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|y:\\.godot\\projects\\elyhorror\\ely-horor\\script\\automovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|solutionrelative:script\\automovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|y:\\.godot\\projects\\elyhorror\\ely-horor\\script\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|solutionrelative:script\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|y:\\.godot\\projects\\elyhorror\\ely-horor\\script\\playeranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|solutionrelative:script\\playeranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|y:\\.godot\\projects\\elyhorror\\ely-horor\\script\\cameralookahead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|solutionrelative:script\\cameralookahead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|y:\\.godot\\projects\\elyhorror\\ely-horor\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|solutionrelative:script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|y:\\.godot\\projects\\elyhorror\\ely-horor\\script\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60BCA00D-1297-49D7-B3FB-A6371B693192}|ElyHoror.csproj|solutionrelative:script\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TreeLighting.cs",
+              "DocumentMoniker": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\TreeLighting.cs",
+              "RelativeDocumentMoniker": "TreeLighting.cs",
+              "ToolTip": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\TreeLighting.cs",
+              "RelativeToolTip": "TreeLighting.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwEkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-30T03:41:21.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PlayerAnimation.cs",
               "DocumentMoniker": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\Script\\PlayerAnimation.cs",
               "RelativeDocumentMoniker": "Script\\PlayerAnimation.cs",
@@ -42,48 +59,47 @@
               "RelativeToolTip": "Script\\PlayerAnimation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T01:16:04.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-30T01:16:04.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AutoMovement.cs",
               "DocumentMoniker": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\Script\\AutoMovement.cs",
               "RelativeDocumentMoniker": "Script\\AutoMovement.cs",
               "ToolTip": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\Script\\AutoMovement.cs",
               "RelativeToolTip": "Script\\AutoMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-29T01:49:11.995Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\Script\\Player.cs",
               "RelativeDocumentMoniker": "Script\\Player.cs",
               "ToolTip": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\Script\\Player.cs",
               "RelativeToolTip": "Script\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-27T05:22:57.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CameraLookAhead.cs",
               "DocumentMoniker": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\Script\\CameraLookAhead.cs",
               "RelativeDocumentMoniker": "Script\\CameraLookAhead.cs",
               "ToolTip": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\Script\\CameraLookAhead.cs",
               "RelativeToolTip": "Script\\CameraLookAhead.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-27T03:47:13.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Flashlight.cs",
               "DocumentMoniker": "Y:\\.GODOT\\Projects\\ElyHorror\\ely-horor\\Script\\Flashlight.cs",
               "RelativeDocumentMoniker": "Script\\Flashlight.cs",
